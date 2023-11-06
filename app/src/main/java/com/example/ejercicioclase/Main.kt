@@ -110,4 +110,59 @@ fun main(){
     }
 
      */
+
+    //Ejercicio6
+    var lista= mutableListOf<Planeta>(
+        Planeta("Ano","Gaseoso",20.5),
+        Planeta("Tierra","Rocoso",2.5),
+        Planeta("Jupiter","Gaseoso",0.5),
+        Planeta("Marte","rocoso",0.5)
+    )
+    //Ejercicio7
+    for (i in lista.indices){
+        println(lista[i].toString())
+    }
+
+    //Ejercicio8
+    for (i in lista.indices){
+        if(lista[i].nombre[0].equals('m',true)){
+            println(lista[i].toString())
+        }
+    }
+
+    //Ejercicio9
+    for (i in lista.indices){
+        if (lista[i].tipo.equals("gaseoso",true)&&lista[i].masa>20){
+            println(lista[i].toString())
+        }
+    }
+
+    //Ejercicio10
+    var media=0.0
+    var suma=0.0
+    for (i in lista.indices){
+        suma+=lista[i].masa
+    }
+    media=suma/lista.size
+    println(media)
+
+    //Ejercicio12
+    var furbito= mutableListOf<Equipo>(
+        Equipo("Madri","España"),
+                Equipo("Madri","España"),
+    Equipo("Madri","España"),
+    Equipo("Barca","España"),
+    Equipo("PSG","Francia"),
+    Equipo("Bayern","Alemania"),
+    Equipo("Porto","Portugal"),
+    Equipo("City","Inglaterra"),
+    Equipo("Chealse","Inglaterra"),
+    Equipo("Dormunt","Alemania"),
+    Equipo("Lyon","Francia"),
+            Equipo("Galatasaray","Turquia"),
+        Equipo("Benfica","Portugal"),
+        Equipo("Napoles","Italia"),
+        Equipo("Milan","Italia"),
+        Equipo("Juventus","Italia")
+    )
 }
