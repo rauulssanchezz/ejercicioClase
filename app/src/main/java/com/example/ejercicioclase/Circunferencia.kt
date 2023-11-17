@@ -2,11 +2,13 @@ package com.example.ejercicioclase
 
 import kotlin.math.PI
 
-open class Circunferencia(radio:Double,centro:Double,punto:Double) {
-    var radio=radio
-    var centro=0.0
-    var punto=0.0
-    constructor() : this()
+open class Circunferencia(var radio:Double) {
+    var centro= arrayOf(0,0)
+
+    constructor(radio:Double,centro:Array<Int>,punto) : this(radio){
+        this.centro=centro
+
+    }
 
 
     fun longitud():Double{
