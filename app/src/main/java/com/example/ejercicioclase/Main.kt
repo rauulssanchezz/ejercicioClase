@@ -147,24 +147,34 @@ fun main(){
 //    println(media)
 
     //Ejercicio12
-    var furbito= mutableListOf<Equipo>(
+//    var furbito= mutableListOf<Equipo>(
+//
+//        Equipo("Madri","España"),
+//        Equipo("Barca","España"),
+//        Equipo("PSG","Francia"),
+//        Equipo("Bayern","Alemania"),
+//        Equipo("Porto","Portugal"),
+//        Equipo("City","Inglaterra"),
+//        Equipo("Chealse","Inglaterra"),
+//        Equipo("Dormunt","Alemania"),
+//        Equipo("Lyon","Francia"),
+//        Equipo("Galatasaray","Turquia"),
+//        Equipo("Benfica","Portugal"),
+//        Equipo("Napoles","Italia"),
+//        Equipo("Milan","Italia"),
+//        Equipo("Juventus","Italia"),
+//        Equipo("Nose","jaja"),
+//        Equipo("Nose2","jaja2")
+//    )
+//    println(championsLeague(furbito))
 
-        Equipo("Madri","España"),
-        Equipo("Barca","España"),
-        Equipo("PSG","Francia"),
-        Equipo("Bayern","Alemania"),
-        Equipo("Porto","Portugal"),
-        Equipo("City","Inglaterra"),
-        Equipo("Chealse","Inglaterra"),
-        Equipo("Dormunt","Alemania"),
-        Equipo("Lyon","Francia"),
-        Equipo("Galatasaray","Turquia"),
-        Equipo("Benfica","Portugal"),
-        Equipo("Napoles","Italia"),
-        Equipo("Milan","Italia"),
-        Equipo("Juventus","Italia"),
-        Equipo("Nose","jaja"),
-        Equipo("Nose2","jaja2")
-    )
-    println(championsLeague(furbito))
+//    var matematicas=Matematicas()
+//   println(matematicas.sumar(2,3))
+    var nota=Nota(1,"sdfghjkoplñ")
+
+    var lista= arrayListOf<Nota>(nota)
+
+    var bloc=BlocNotas(lista)
+
+    println(bloc.toString())
 }

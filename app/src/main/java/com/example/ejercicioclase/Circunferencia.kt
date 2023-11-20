@@ -2,25 +2,23 @@ package com.example.ejercicioclase
 
 import kotlin.math.PI
 
-open class Circunferencia(var radio:Double) {
-    var centro= arrayOf(0,0)
+open class Circunferencia(var radio:Double = 0.0) {
+    var centro = arrayListOf(0,0)
 
-    constructor(radio:Double,centro:Array<Int>,punto) : this(radio){
-        this.centro=centro
+    constructor( centro:ArrayList<Int>, punto:ArrayList<Int>):this(){
+        this.centro = centro
+        this.radio = ((punto[0]-centro[0])*(punto[0]-centro[0]) + (punto[1] - centro[1]) * (punto[1] - centro[1])).toDouble()
 
     }
-
 
     fun longitud():Double{
-        var long=0.0
-        long=2* PI*this.radio
-        return long
+        return 2 * PI * radio
     }
 
-
-    override fun toString():String{
-        var res="Radio: $radio Centro: $centro Punto: $punto Longitud: "+this.longitud()
-        return res
+    @Override
+    override fun toString(): String {
+        return "Su radio es de "+longitud()+"\nSu centro es "+centro.toString()
     }
+
 
 }
